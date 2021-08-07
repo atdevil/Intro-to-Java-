@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+  <title>Andrew deVillier</title>
+  <style>
+    body {
+      text-align: center;
+      background-position: center; 
+      background-position: cover; 
+      background: url("https://cdn.pixabay.com/photo/2016/10/22/17/06/gradient-1761190_1280.jpg");
+    }
+    p {
+      text-align: left; 
+      color: #fff;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+      font-size: 22px;
+    }
+    
+     input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px; 
+    }
+    
+    img {
+      width: 15em;
+      border: 4px solid black; 
+      border-radius: 50%; 
+    }
+    
+    /*side navigation menu*/ 
+    . sidenav {
+      height: 100%; /*100% full height*/
+      width: 0; /*0 width - change with Javascript*/ 
+      
+    }
+    
+   
+    
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+    
+    .sidebar {
+      margin: 0;
+      padding: 0; 
+      width: 200px; 
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    /*sidebar links*/ 
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    color: white;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white; 
+  }
+  
+  /*Links on mouse over*/
+  .sidebar a:hover:not(.active) { 
+    background-color: #555
+    color: gray; 
+  }
+  
+  /* Page content. Value of margin left property should match the value of the sidebars width property */ 
+  div.content {
+    margin-left: 200px; 
+    padding: 1px 16px; 
+    height: 10px
+  }
+  
+  /*On Screens under 700px width, sidebar becomes topbar*/ 
+  @media screen and (max-width: 700px) {
+    .sidebar a {
+      text-align: center; 
+      float: none;
+    }
+  }
+  
+  
+  </style>
+</head>
+<body>
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQHfs1l9oLPUqw/profile-displayphoto-shrink_800_800/0/1620824721504?e=1633564800&v=beta&t=UopHEqyMOOr2ivqxvYWDaAIacIgowk2kZa6omgDv1v8" alt="profile" 
+  >
+  <p>Welcome</p>
+<!-- this sidebar--> 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  ...
+</div>
+
+<!--content-->
+<div class="content">
+</div>
+
+  <input type="email" placeholder="Your email">
+  <input type="submit">
+</body>
